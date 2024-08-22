@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-22 12:53:22.250851",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "purchase_invoice",
+  "invoice_date",
+  "payment_term",
+  "due_date",
+  "column_break_5",
+  "reference",
+  "grand_total",
+  "outstanding_amount"
+ ],
+ "fields": [
+  {
+   "fetch_from": "purchase_invoice.posting_date",
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fetch_from": "purchase_invoice.payment_terms_template",
+   "fieldname": "payment_term",
+   "fieldtype": "Data",
+   "label": "Payment Term"
+  },
+  {
+   "fetch_from": "purchase_invoice.due_date",
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fetch_from": "purchase_invoice.grand_total",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total",
+   "options": "currency"
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "purchase_invoice.outstanding_amount",
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Outstanding Amount",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-22 14:36:16.222629",
+ "modified_by": "Administrator",
+ "module": "Purchase Billing",
+ "name": "Purchase Billing Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
