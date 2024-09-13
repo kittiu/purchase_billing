@@ -146,15 +146,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Sales Billing",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
    "fieldname": "supplier",
    "fieldtype": "Link",
    "label": "Supplier",
@@ -184,7 +175,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-22 18:05:57.546966",
+ "modified": "2024-09-13 09:33:40.833051",
  "modified_by": "Administrator",
  "module": "Purchase Billing",
  "name": "Purchase Billing",
