@@ -148,6 +148,10 @@
   {
    "fieldname": "supplier",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Supplier",
    "options": "Supplier",
    "reqd": 1
@@ -156,6 +160,7 @@
    "fetch_from": "supplier.supplier_name",
    "fieldname": "supplier_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Supplier Name",
    "read_only": 1
   },
@@ -175,7 +180,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-09-13 09:33:40.833051",
+ "modified": "2024-09-18 15:46:43.314062",
  "modified_by": "Administrator",
  "module": "Purchase Billing",
  "name": "Purchase Billing",
