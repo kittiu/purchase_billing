@@ -29,6 +29,9 @@ app_license = "mit"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+	"Payment Entry" : "public/js/payment_entry.js",
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -68,7 +71,9 @@ app_license = "mit"
 # ------------
 
 # before_install = "purchase_billing.install.before_install"
+after_install = "sales_billing.install.after_install"
 # after_install = "purchase_billing.install.after_install"
+before_uninstall = "sales_billing.setup.before_uninstall"
 
 # Uninstallation
 # ------------

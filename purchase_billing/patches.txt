@@ -4,3 +4,4 @@
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+purchase_billing.patches.create_custom_fields_20241114_1000
