@@ -71,9 +71,9 @@ doctype_js = {
 # ------------
 
 # before_install = "purchase_billing.install.before_install"
-after_install = "sales_billing.install.after_install"
+after_install = "purchase_billing.install.after_install"
 # after_install = "purchase_billing.install.after_install"
-before_uninstall = "sales_billing.setup.before_uninstall"
+before_uninstall = "purchase_billing.setup.before_uninstall"
 
 # Uninstallation
 # ------------
