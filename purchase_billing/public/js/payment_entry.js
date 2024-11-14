@@ -1,7 +1,4 @@
 frappe.ui.form.on("Payment Entry", {
-    refresh(frm) {
-        frm.set_df_property('purchase_billing', 'read_only', 1);
-    },
     get_invoices_from_purchase_billing: function(frm) {
 		const fields = [
 			{
